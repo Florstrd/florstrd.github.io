@@ -1,0 +1,181 @@
+/* Site-wide styling here */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Rubik+Marker+Hatch&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+**HEADER
+*/
+
+.circle {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.date {
+    display: flex;
+    justify-items: row;
+    justify-content: center;
+}
+
+.time-container {
+    display: flex;
+    justify-items: row;
+    justify-content: center;
+}
+
+#time-date {
+    
+    padding: 0px;
+    margin: 0px;
+    font-size: 40px;
+    
+
+}
+
+
+li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding
+{
+    font-size: 2rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.picture-time{
+    color: goldenrod;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    
+  }
+  .big-text{
+    font-family: 'Dancing Script', cursive;
+}
+.small-text{
+    text-align: center;
+    font-family: 'Alexandria', sans-serif;
+    margin-bottom: 120px;
+}
+
+@media(max-width:810px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        
+    }
+    .nav-menu{
+        
+        position: fixed;
+        left: -112%;
+        top: 50px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+        
+    }
+
+}
+/*
+**Fotter
+*/
+footer{
+    text-align: center;
+    font-size: 15px;
+}
+footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+    }
+    #year{
+        margin-right: 10px;
+    }
+
+.big-text{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-left: 20px;
+   max-width: 90%;
+}
+.small-text{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 125px;
+    max-width: 90%;
+}

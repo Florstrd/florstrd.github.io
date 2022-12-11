@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/rps.css">
+    <title>RPS</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./mainPage.html" class="nav-branding">Casino Royale</a>
+            <ul class="nav-menu">
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div id="addiction-timer">
+        <h2>Timer</h2>
+        <select name="game-timer" id="game-time">
+          <option value="7200">2h</option>
+          <option value="3600">1h</option>
+          <option value="2700">45min</option>
+          <option value="1800">30min</option>
+          <option value="900">15min</option>
+          <option value="300">5min</option>
+          <option value="10">10s</option>
+      </select>
+      <button type="button" id="start-timer">Börja timer</button>
+      <div id="time-out"></div>
+      <div id="timer-output"></div>
+      <h2>Plays</h2>
+      <div id="user-plays"></div>
+      </div>
+
+    <section id="rps">
+        <h1>Rock, Paper, Scissors</h1>
+        <p id="money"></p>
+        <input type="number" name="bet" id="bet" placeholder="Input bet amount">
+        <div id="buttons">
+        </div>
+        <p id="player-result">Your choice: </p>
+        <p id="casino-result">Casinos choice: </p>
+        <h2 id="result"></h2>
+    </section>
+    <footer>
+
+        </p>
+        <div class="picture-time" id="time-date">
+            <div class="picture-time" id="timeAndDateContainer">
+                <div class="date">
+
+                    <div class="date">
+                        <div id="day"> 00 </div>/
+                    </div>
+
+                    <div class="date">
+                        <div id="month"> 00</div>/
+                    </div>
+
+                    <div class="date">
+                        <div id="year"> 00/</div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="time-container">
+
+                    <div class="circle">
+                        <div id="hours"> 00 </div>:
+                    </div>
+
+                    <div class="circle">
+                        <div id="minutes"> 00 </div>:
+                    </div>
+
+                    <div class="circle">
+                        <div id="seconds"> 00</div>
+                    </div>
+
+                    <div class="circle">
+                        <div id="ampm">AM</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Öppettider: 24h mån-fre
+            <br>
+        <p></p>Stängt: Lör-Sön </p>
+    </footer>
+</body>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/rps.js"></script>
+<script src="../assets/js/speltimer.js"></script>
+
+</html>

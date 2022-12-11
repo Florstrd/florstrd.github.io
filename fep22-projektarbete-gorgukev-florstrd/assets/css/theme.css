@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.theme-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#theme{
+    margin-top: 25px;
+    border-radius: 0%;
+    width: 10%;
+    font-size: 25px;
+    color: black;
+    background: rgb(244,247,0);
+    background: linear-gradient(0deg, rgba(244,247,0,1) 19%, rgba(253,45,45,1) 96%);
+    border: none;
+}
+#theme:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.picker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 720px;
+    height: 180px;
+
+}
+
+.range{
+    width: 65%;
+    cursor: pointer;
+}
+
+@media(max-width:810px){
+    #theme{
+        width: 17%;
+    }
+    
+    .picker{
+        width: 420px;
+        height: 180px;
+    
+    }
+    
+    .range{
+        width: 95%;
+    }
+    
+   
+}

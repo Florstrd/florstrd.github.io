@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria&family=Caveat&family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/mainPge.css">
+  <script defer src="../assets/js/username.js"></script>
+  <script defer src="../assets/js/veckoTimer.js"></script>
+  <script defer src="../assets/js/main.js"></script>
+  <script defer src="../assets/js/tracking.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#" class="nav-branding">Casino Royale</a>
+      <ul class="nav-menu">
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div id="picture-conatiner">
+
+  
+  <h2 class="picture-text">LIVE FOR THE GAMBLE GAMBLE, <br>GAMBLE IS THE GAME</h2>
+</div>
+  
+<div id="picture-div">
+    <img src="../assets/images/carl-raw-7H7KVCihBvI-unsplash.jpg" id="main-picture" alt="Casino photo">
+  </div>
+  
+    <div id="select-container">
+      <select id="select" onchange="getSelectValue()">
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
+        <option value="0">Sunday</option>
+      </select>
+      <div id="out"></div>
+    </div>
+
+    <div class="reg-container">
+      <div id="förOchEfternamn">
+      </div>
+      <div class="reg">
+        <!-- Förnamn-->
+        
+        <input placeholder="Firstname" class="name-box" id="förnamn">
+
+        <!--Efternamn-->
+        
+        <input placeholder="Lastname" class="name-box" id="efternamn">
+
+        <!--knappen-->
+       
+      </div>
+<div class="reg-container">
+  <div class="reg">
+    
+      
+      <input placeholder="Age" class="name-box" type="text" id="input-field">
+   
+     
+     
+      <input placeholder="Money" class="name-box" type="text" id="moneyInput">
+   
+    </div>
+  </div>
+  <button id="submit" type="submit" onclick="alertMessage()">Spela!</button>
+
+  <footer>
+   
+    </p>
+    <div class="picture-time" id="time-date">
+      <div class="picture-time" id="timeAndDateContainer">
+        <div class="date">
+  
+          <div class="date">
+            <div id="day"> 00 </div>/
+          </div>
+  
+          <div class="date">
+            <div id="month"> 00</div>/
+          </div>
+  
+          <div class="date">
+            <div id="year"> 00/</div>
+          </div>
+  
+  
+  
+        </div>
+  
+        <div class="time-container">
+  
+          <div class="circle">
+            <div id="hours"> 00 </div>:
+          </div>
+  
+          <div class="circle">
+            <div id="minutes"> 00 </div>:
+          </div>
+  
+          <div class="circle">
+            <div id="seconds"> 00</div>
+          </div>
+  
+          <div class="circle">
+            <div id="ampm">AM</div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>Öppettider: 24h mån-fre
+      <br><p></p>Stängt: Lör-Sön </p>
+  </footer>
+</body>
+
+
+<!-- footer -->
+
+
+</html>

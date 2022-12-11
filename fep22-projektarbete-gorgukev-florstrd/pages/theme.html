@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/theme.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav class="navbar">
+              <a href="./mainPage.html" class="nav-branding">Casino Royale</a>
+              <ul class="nav-menu">
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+          </header>  
+    <div id="localStorage"></div>
+    <div class="theme-container">
+    <select  id="theme">
+        <option id="t1" value="#262626" data-header="DarkSlateGrey">Dark</option>
+        <option id="t2" value="#f0ffff" data-header="#800000">Light</option>
+        <option id="t3" value="#7cfc00" data-header="DarkOrange">Headache</option>
+    </select>
+  </div>
+    
+    <div class="picker">
+
+        Red :<input type="range" min="0" max="255" step="1" class="range" id="red" value="255">
+        Green :<input type="range" min="0" max="255" step="1" class="range" id="green" value="255">
+        Blue :<input type="range" min="0" max="255" step="1" class="range" id="blue" value="255">   
+    </div>
+
+    <footer>
+   
+    </p>
+    <div class="picture-time" id="time-date">
+      <div class="picture-time" id="timeAndDateContainer">
+        <div class="date">
+  
+          <div class="date">
+            <div id="day"> 00 </div>/
+          </div>
+  
+          <div class="date">
+            <div id="month"> 00</div>/
+          </div>
+  
+          <div class="date">
+            <div id="year"> 00/</div>
+          </div>
+  
+  
+  
+        </div>
+  
+        <div class="time-container">
+  
+          <div class="circle">
+            <div id="hours"> 00 </div>:
+          </div>
+  
+          <div class="circle">
+            <div id="minutes"> 00 </div>:
+          </div>
+  
+          <div class="circle">
+            <div id="seconds"> 00</div>
+          </div>
+  
+          <div class="circle">
+            <div id="ampm">AM</div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>Öppettider: 24h mån-fre
+      <br><p>Stängt: Lör-Sön </p>
+  </footer>
+</body>
+
+</html>
