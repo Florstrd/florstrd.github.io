@@ -42,6 +42,9 @@ function setBackground(color) {
 }
 //Color localStorage
 setBackground(localStorage.getItem('color'))
+    if (localStorage.getItem("color") == null) {
+        setBackground("#262626");
+    }
 
 function setTextColor(textColor){
     let display = document.querySelector('body');
@@ -50,14 +53,20 @@ function setTextColor(textColor){
 
 }
 setTextColor(localStorage.getItem('textColor'))
+    if (localStorage.getItem("textColor") == null) {
+        setTextColor("rgb(255, 255, 255)");
+    }
 
 function setHeader(headerColor) {
     const header = document.querySelector('header');
     header.style.background = headerColor;
     localStorage.setItem("headerColor", headerColor);
 }
-setHeader(localStorage.getItem('headerColor'))
 
+setHeader(localStorage.getItem('headerColor'))
+    if (localStorage.getItem("headerColor") == null) {
+        setHeader("DarkSlateGrey");
+    }
 
 //DATE
 setInterval(myTimer, 1000)
